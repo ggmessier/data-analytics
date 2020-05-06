@@ -1,5 +1,5 @@
 load data local
-     infile 'Season-2018.csv'
+     infile '~/data/baseball/Season-2018.csv'
      into table Games
      fields terminated by ','
      ignore 1 lines

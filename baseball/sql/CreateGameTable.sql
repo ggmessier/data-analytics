@@ -1,3 +1,4 @@
+drop table Games;
 create table Games (
   Time datetime,
   HomeTeam varchar(20),
