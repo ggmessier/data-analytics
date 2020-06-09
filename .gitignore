@@ -1,7 +1,0 @@
-*2
-.project
-.pydevproject
-*.npz
-*~
-__pycache__
-.ipynb_checkpoints
