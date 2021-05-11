@@ -6,6 +6,6 @@ The following directories contain the source code used to produce the results pr
 
 Directory | Publication
 --- | ---
-`RAPID Tests` | Messier, Tutty, John, "The Best Thresholds for Rapid Identification of Episodic and Chronic Homeless Shelter Use", Submitted to the International Journal on Homelessness, January, 2021. [(arXiv preprint PDF)](https://arxiv.org/abs/2105.01042)
+`RAPID Tests` | Messier, Tutty, John, "The Best Thresholds for Rapid Identification of Episodic and Chronic Homeless Shelter Use", Accepted to the International Journal on Homelessness, May, 2021. [(arXiv preprint PDF)](https://arxiv.org/abs/2105.01042)
 
 
