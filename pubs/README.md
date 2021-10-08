@@ -6,6 +6,7 @@ The following directories contain the source code used to produce the results pr
 
 Directory | Publication
 --- | ---
+`Client History Evaluation` | Messier, John, Malik, "Predicting Chronic Homelessness: The Importance of Comparing Algorithms using Client Histories", Submitted to the Journal of Technology in Human Services, January, 2021. [(arXiv preprint PDF)](https://arxiv.org/abs/2105.15080)
 `RAPID Tests` | Messier, Tutty, John, "The Best Thresholds for Rapid Identification of Episodic and Chronic Homeless Shelter Use", Accepted to the International Journal on Homelessness, May, 2021. [(arXiv preprint PDF)](https://arxiv.org/abs/2105.01042)
 
 
