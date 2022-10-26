@@ -6,6 +6,7 @@ The following directories contain the source code used to produce the results pr
 
 Directory | Publication
 --- | ---
+`SAM` | G. G. Messier, "A Simpler Method for Understanding Emergency Shelter Access Patterns ", submitted to the Journal of Social Distress and Homelessness, October, 2022. [(arXiv preprint)](https://arxiv.org/abs/2210.13619)
 `Chronic Risk Rule Search` | C. John and G. G. Messier, "A Rule Search Framework for the Early Identification of Chronic Emergency Homeless Shelter Clients", submitted to Engineering Applications of Artificial Intelligence, March, 2022. [(arXiv preprint)](https://arxiv.org/abs/2205.09883)
 `Client History Evaluation` | G. G. Messier, C. John and A. Malik, "Predicting Chronic Homelessness: The Importance of Comparing Algorithms using Client Histories", Journal of Technology in Human Services, September, 2021, p. 1-12. [(DOI)](https://doi.org/10.1080/15228835.2021.1972502) [(arXiv preprint)](https://arxiv.org/abs/2105.15080)
 `RAPID Tests` | G. G. Messier, L. Tutty and C. John, "The Best Thresholds for Rapid Identification of Episodic and Chronic Homeless Shelter Use", International Journal on Homelessness, Vol. 2, No. 1, November, 2021, p. 1-11  [(DOI)](https://doi.org/10.5206/ijoh.2022.1.13607), [(arXiv preprint PDF)](https://arxiv.org/abs/2105.01042)
