@@ -9,7 +9,7 @@ def bloom_filter(plnTxt, saltStr, qGrmLen=2, filterLen=32):
     
     plnTxt = f'_{plnTxt}_'
     bloomFilter = 0
-    
+        
     for i in range(len(plnTxt)-qGrmLen+1):
         byteStr = (saltStr + plnTxt[i:i+qGrmLen]).encode('utf-8','replace')
     
@@ -88,7 +88,7 @@ def scramble_selected_columns():
         
         # Generate default Bloom filter output.
         if defaultBloom.get():
-            for i in indSelected:
+            for i in indSelected and len(fields[i]) > 0:
                 fields[i] = f'{bloom_filter(fields[i],saltStr=key):x}'
 
             scrambledFile.write(','.join(fields)+'\n')
@@ -100,7 +100,10 @@ def scramble_selected_columns():
                 if i in indSelected:
                     for q in qGrmValues:
                         for f in filterLenValues:
-                            fieldsBloom += [ f'{bloom_filter(fields[i],saltStr=key,qGrmLen=q,filterLen=f):x}' ]
+                            if len(fields[i]) > 0:
+                                fieldsBloom += [ f'{bloom_filter(fields[i],saltStr=key,qGrmLen=q,filterLen=f):x}' ]
+                            else:
+                                fieldsBloom += [ fields[i] ]
                 else:
                     fieldsBloom += [ fields[i] ]
                     
@@ -159,15 +162,15 @@ winStr = '''
 University of Calgary 
 Bloom Filter Scrambling Utility
 Contact: Dr. Geoffrey Messier (gmessier@ucalgary.ca)
-Version: 1.0
+Version: 1.1
 '''
 
 tk.Label(rootWin,text=winStr).pack()
 
 defaultBloom = tk.IntVar()
-defaultBloom.set(1)
-winStr = 'Use default Bloom filter settings.'
-tk.Checkbutton(rootWin, text=winStr, variable=defaultBloom, width=25, anchor='w').pack()
+defaultBloom.set(0)
+#winStr = 'Use default Bloom filter settings.'
+#tk.Checkbutton(rootWin, text=winStr, variable=defaultBloom, width=25, anchor='w').pack()
 
 
 #readFile = pd.read_csv(root.filename)
